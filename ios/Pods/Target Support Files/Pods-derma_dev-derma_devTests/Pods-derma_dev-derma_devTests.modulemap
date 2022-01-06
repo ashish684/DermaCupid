@@ -1,0 +1,6 @@
+module Pods_derma_dev_derma_devTests {
+  umbrella header "Pods-derma_dev-derma_devTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
