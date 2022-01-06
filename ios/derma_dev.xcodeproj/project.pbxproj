@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* derma_devTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* derma_devTests.m */; };
 		018FEA902657CE9E00324CCB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 018FEA8F2657CE9E00324CCB /* GoogleService-Info.plist */; };
-		018FEAB42657D15B00324CCB /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018FEAB32657D15B00324CCB /* File.swift */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -18,6 +17,9 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* derma_devTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* derma_devTests.m */; };
 		3E96F378AD5E5F5B6A4152DD /* libPods-derma_dev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B63D215ED8A23E8FB3FFB3D1 /* libPods-derma_dev.a */; };
+		5B9D2BF82787831400BE1605 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D2BF72787831400BE1605 /* GoogleService-Info.plist */; };
+		5B9D2BFC2787838400BE1605 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D2BFB2787838400BE1605 /* File.swift */; };
+		5B9D2BFE278783EE00BE1605 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D2BFD278783EE00BE1605 /* Empty.swift */; };
 		69620DA48EBA96C1041A5DBD /* libPods-derma_dev-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3FFC33969475F96419C7FD /* libPods-derma_dev-tvOSTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		D031455153C065F9887A4C0D /* libPods-derma_dev-derma_devTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F416F6DDA0CEB9767D3B9C42 /* libPods-derma_dev-derma_devTests.a */; };
@@ -63,8 +65,6 @@
 		018FEA9F2657CF8700324CCB /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		018FEAA02657CF8700324CCB /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		018FEAA12657CF8700324CCB /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		018FEAB22657D15B00324CCB /* derma_dev-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "derma_dev-Bridging-Header.h"; sourceTree = "<group>"; };
-		018FEAB32657D15B00324CCB /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		03605AD078E14441C06A3E87 /* Pods-derma_dev-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-derma_dev-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-derma_dev-tvOSTests/Pods-derma_dev-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* derma_dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = derma_dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = derma_dev/AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +80,9 @@
 		33B8EE55DA8C98ABBD0C079A /* Pods-derma_dev-derma_devTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-derma_dev-derma_devTests.debug.xcconfig"; path = "Target Support Files/Pods-derma_dev-derma_devTests/Pods-derma_dev-derma_devTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D5A247A5BBE1F7EFA96204C /* Pods-derma_dev-derma_devTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-derma_dev-derma_devTests.release.xcconfig"; path = "Target Support Files/Pods-derma_dev-derma_devTests/Pods-derma_dev-derma_devTests.release.xcconfig"; sourceTree = "<group>"; };
 		4BC96BF927D63381CDA3EA5B /* Pods-derma_dev-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-derma_dev-tvOS.release.xcconfig"; path = "Target Support Files/Pods-derma_dev-tvOS/Pods-derma_dev-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		5B9D2BF72787831400BE1605 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B9D2BFB2787838400BE1605 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		5B9D2BFD278783EE00BE1605 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = derma_dev/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B63D215ED8A23E8FB3FFB3D1 /* libPods-derma_dev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-derma_dev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B992B3F458A1163D2394433F /* Pods-derma_dev-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-derma_dev-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-derma_dev-tvOSTests/Pods-derma_dev-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				018FEA912657CF5800324CCB /* Fonts */,
+				5B9D2BF72787831400BE1605 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -205,14 +209,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				018FEAB32657D15B00324CCB /* File.swift */,
+				5B9D2BFD278783EE00BE1605 /* Empty.swift */,
+				5B9D2BFB2787838400BE1605 /* File.swift */,
 				13B07FAE1A68108700A75B9A /* derma_dev */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* derma_devTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				F9619553903ABC5748B9A9EC /* Pods */,
-				018FEAB22657D15B00324CCB /* derma_dev-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -391,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				5B9D2BF82787831400BE1605 /* GoogleService-Info.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				018FEA902657CE9E00324CCB /* GoogleService-Info.plist in Resources */,
 			);
@@ -505,7 +510,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-derma_dev-derma_devTests/Pods-derma_dev-derma_devTests-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -523,7 +528,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-derma_dev/Pods-derma_dev-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -742,7 +747,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				018FEAB42657D15B00324CCB /* File.swift in Sources */,
+				5B9D2BFE278783EE00BE1605 /* Empty.swift in Sources */,
+				5B9D2BFC2787838400BE1605 /* File.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

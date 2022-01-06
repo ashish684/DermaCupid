@@ -13,8 +13,8 @@
 #import "JWTAlgorithmFactory.h"
 #import "JWTErrorDescription.h"
 #import "JWTBase64Coder.h"
-#import "JWTClaimsSetSerializer.h"
-#import "JWTClaimsSetVerifier.h"
+#import "JWTClaimsSetsProtocols.h"
+#import "JWTClaimsSetDSLBase.h"
 
 #import "JWTAlgorithmDataHolder+FluentStyle.h"
 #import "JWTCodingBuilder+FluentStyle.h"
@@ -38,6 +38,7 @@
 #pragma mark - Internal
 @property (strong, nonatomic, readwrite) JWTAlgorithmDataHolderChain *internalChain;
 @property (copy, nonatomic, readwrite) NSNumber *internalOptions;
+@property (strong, nonatomic, readwrite) id <JWTStringCoderProtocol> internalTokenCoder;
 
 #pragma mark - Fluent
 @property (copy, nonatomic, readwrite) JWTCodingBuilder *(^chain)(JWTAlgorithmDataHolderChain *chain);
@@ -46,6 +47,7 @@
 @property (copy, nonatomic, readwrite) JWTCodingBuilder *(^options)(NSNumber *options);
 @property (copy, nonatomic, readwrite) JWTCodingBuilder *(^addHolder)(id<JWTAlgorithmDataHolderProtocol> holder);
 @property (copy, nonatomic, readwrite) JWTCodingBuilder *(^constructHolder)(id<JWTAlgorithmDataHolderProtocol>(^block)(id<JWTAlgorithmDataHolderProtocol> holder));
+@property (copy, nonatomic, readwrite) JWTCodingBuilder *(^tokenCoder)(id<JWTStringCoderProtocol> tokenCoder);
 
 @end
 
@@ -64,6 +66,10 @@
 }
 - (instancetype)addHolder:(id<JWTAlgorithmDataHolderProtocol>)holder {
     self.internalChain = [self.internalChain chainByAppendingHolder:holder];
+    return self;
+}
+- (instancetype)tokenCoder:(id<JWTStringCoderProtocol>)tokenCoder {
+    self.internalTokenCoder = tokenCoder;
     return self;
 }
 - (void)setupFluent {
@@ -103,6 +109,10 @@
         }
         return weakSelf;
     };
+    
+    self.tokenCoder = ^(id<JWTStringCoderProtocol> tokenCoder) {
+        return [weakSelf tokenCoder:tokenCoder];
+    };
 }
 @end
 
@@ -116,6 +126,7 @@
 - (instancetype)initWithChain:(JWTAlgorithmDataHolderChain *)chain {
     if (self = [super init]) {
         self.internalChain = chain;
+        self.internalTokenCoder = [JWTStringCoderForEncoding utf8Encoding];
         [self setupFluent];
     }
     return self;
@@ -144,13 +155,13 @@
 #pragma mark - Internal
 @property (copy, nonatomic, readwrite) NSDictionary *internalPayload;
 @property (copy, nonatomic, readwrite) NSDictionary *internalHeaders;
-@property (strong, nonatomic, readwrite) JWTClaimsSet *internalClaimsSet;
+@property (strong, nonatomic, readwrite) id<JWTClaimsSetCoordinatorProtocol> internalClaimsSetCoordinator;
 @property (copy, nonatomic, readwrite) NSDictionary *internalMixingClaimsPayload;
 
 #pragma mark - Fluent
 @property (copy, nonatomic, readwrite) JWTEncodingBuilder *(^payload)(NSDictionary *payload);
 @property (copy, nonatomic, readwrite) JWTEncodingBuilder *(^headers)(NSDictionary *headers);
-@property (copy, nonatomic, readwrite) JWTEncodingBuilder *(^claimsSet)(JWTClaimsSet *claimsSet);
+@property (copy, nonatomic, readwrite) JWTEncodingBuilder *(^claimsSetCoordinator)(id<JWTClaimsSetCoordinatorProtocol> claimsSetCoordinator);
 @end
 
 @implementation JWTEncodingBuilder (Setters)
@@ -162,9 +173,8 @@
     self.internalHeaders = headers;
     return self;
 }
-
-- (instancetype)claimsSet:(JWTClaimsSet *)claimsSet {
-    self.internalClaimsSet = claimsSet;
+- (instancetype)claimsSetCoordinator:(id<JWTClaimsSetCoordinatorProtocol>)claimsSetCoordinator {
+    self.internalClaimsSetCoordinator = claimsSetCoordinator;
     return self;
 }
 @end
@@ -179,8 +189,8 @@
     self.headers = ^(NSDictionary *headers) {
         return [weakSelf headers:headers];
     };
-    self.claimsSet = ^(JWTClaimsSet *claimsSet) {
-        return [weakSelf claimsSet:claimsSet];
+    self.claimsSetCoordinator = ^(id<JWTClaimsSetCoordinatorProtocol> claimsSetCoordinator) {
+        return [weakSelf claimsSetCoordinator:claimsSetCoordinator];
     };
 }
 @end
@@ -193,8 +203,9 @@
         [dictionary addEntriesFromDictionary:_internalPayload];
     }
     
-    if (_internalClaimsSet) {
-        [dictionary addEntriesFromDictionary:[JWTClaimsSetSerializer dictionaryWithClaimsSet:_internalClaimsSet]];
+    if (_internalClaimsSetCoordinator) {
+        __auto_type claimsDictionary = [_internalClaimsSetCoordinator.claimsSetSerializer dictionaryFromClaimsSet:_internalClaimsSetCoordinator.claimsSetStorage];
+        [dictionary addEntriesFromDictionary:claimsDictionary];
     }
     
     return dictionary;
@@ -204,11 +215,9 @@
 + (instancetype)encodePayload:(NSDictionary *)payload {
     return ((JWTEncodingBuilder *)[self createWithEmptyChain]).payload(payload);
 }
-
-+ (instancetype)encodeClaimsSet:(JWTClaimsSet *)claimsSet {
-    return ((JWTEncodingBuilder *)[self createWithEmptyChain]).claimsSet(claimsSet);
++ (instancetype)encodeClaimsSetWithCoordinator:(id<JWTClaimsSetCoordinatorProtocol>)coordinator {
+    return ((JWTEncodingBuilder *)[self createWithEmptyChain]).claimsSetCoordinator(coordinator);
 }
-
 @end
 
 @implementation JWTEncodingBuilder (Coding)
@@ -321,19 +330,10 @@
         theSecretData = theSecretData ?: [NSData data];
     }
     if (theSecretData && [theAlgorithm respondsToSelector:@selector(signHash:key:error:)]) {
-          NSData *signedOutputData = [theAlgorithm signHash:[signingInput dataUsingEncoding:NSUTF8StringEncoding] key:theSecretData error:&algorithmError];
+        __auto_type hash = [self.internalTokenCoder dataWithString:signingInput];
+        __auto_type signedOutputData = [theAlgorithm signHash:hash key:theSecretData error:&algorithmError];
         signedOutput = [JWTBase64Coder base64UrlEncodedStringWithData:signedOutputData];
     }
-//    if (theSecretData && [theAlgorithm respondsToSelector:@selector(encodePayloadData:withSecret:)]) {
-//        // not sure that it is correct.
-//        NSData *signedOutputData = [theAlgorithm encodePayloadData:[signingInput dataUsingEncoding:NSUTF8StringEncoding] withSecret:theSecretData];
-//        signedOutput = [JWTBase64Coder base64UrlEncodedStringWithData:signedOutputData];
-//    }
-    // not used now.
-//    else {
-//        NSData *signedOutputData = [theAlgorithm encodePayload:signingInput withSecret:self.jwtSecret];
-//        signedOutput = [JWTBase64Coder base64UrlEncodedStringWithData:signedOutputData];
-//    }
 
     if (algorithmError) {
         // algorithmError
@@ -386,11 +386,11 @@
 @interface JWTDecodingBuilder ()
 #pragma mark - Internal
 @property (copy, nonatomic, readwrite) NSString *internalMessage;
-@property (nonatomic, readwrite) JWTClaimsSet *internalClaimsSet;
+@property (strong, nonatomic, readwrite) id<JWTClaimsSetCoordinatorProtocol> internalClaimsSetCoordinator;
 
 #pragma mark - Fluent
 @property (copy, nonatomic, readwrite) JWTDecodingBuilder *(^message)(NSString *message);
-@property (copy, nonatomic, readwrite) JWTDecodingBuilder *(^claimsSet)(JWTClaimsSet *claimsSet);
+@property (copy, nonatomic, readwrite) JWTDecodingBuilder *(^claimsSetCoordinator)(id<JWTClaimsSetCoordinatorProtocol> claimsSetCoordinator);
 
 @end
 
@@ -399,8 +399,8 @@
     self.internalMessage = message;
     return self;
 }
-- (instancetype)claimsSet:(JWTClaimsSet *)claimsSet {
-    self.internalClaimsSet = claimsSet;
+- (instancetype)claimsSetCoordinator:(id<JWTClaimsSetCoordinatorProtocol>)claimsSetCoordinator {
+    self.internalClaimsSetCoordinator = claimsSetCoordinator;
     return self;
 }
 @end
@@ -412,8 +412,8 @@
     self.message = ^(NSString *message) {
         return [weakSelf message:message];
     };
-    self.claimsSet = ^(JWTClaimsSet *claimsSet) {
-        return [weakSelf claimsSet:claimsSet];
+    self.claimsSetCoordinator = ^(id<JWTClaimsSetCoordinatorProtocol> claimsSetCoordinator) {
+        return [weakSelf claimsSetCoordinator:claimsSetCoordinator];
     };
 }
 @end
@@ -431,12 +431,12 @@
     // iterate over items in chain!
     // and return if everything ok!
     // or return error!
-    NSError *error = nil;
-    NSDictionary *decodedDictionary = nil;
-    NSString *message = self.internalMessage;
-    NSNumber *options = self.internalOptions;
-    NSArray *holders = self.internalChain.holders;
-    JWTClaimsSet *claimsSet = self.internalClaimsSet;
+    __auto_type error = (NSError *)nil;
+    __auto_type decodedDictionary = (NSDictionary *)nil;
+    __auto_type message = self.internalMessage;
+    __auto_type options = self.internalOptions;
+    __auto_type holders = self.internalChain.holders;
+    __auto_type claimsSetCoordinator = self.internalClaimsSetCoordinator;
     
     // ERROR: HOLDERS ARE EMPTY.
     if (holders.count == 0) {
@@ -462,39 +462,28 @@
         return [[JWTCodingResultType alloc] initWithErrorResult:[[JWTCodingResultTypeError alloc] initWithError:error]];
     }
     
-    if (claimsSet) {
-        BOOL claimsVerified = [JWTClaimsSetVerifier verifyClaimsSet:[JWTClaimsSetSerializer claimsSetWithDictionary:decodedDictionary[JWTCodingResultComponents.Payload]] withTrustedClaimsSet:claimsSet];
-        if (!claimsVerified){
+    if (claimsSetCoordinator) {
+        __auto_type untrustedClaimsSet = [claimsSetCoordinator.claimsSetSerializer claimsSetFromDictionary:decodedDictionary[JWTCodingResultComponents.payload]];
+        __auto_type trustedClaimsSet = claimsSetCoordinator.claimsSetStorage;
+        __auto_type claimsVerified = [claimsSetCoordinator.claimsSetVerifier verifyClaimsSet:untrustedClaimsSet withTrustedClaimsSet:trustedClaimsSet];
+        if (!claimsVerified) {
             error = [JWTErrorDescription errorWithCode:JWTClaimsSetVerificationFailed];
             return [[JWTCodingResultType alloc] initWithErrorResult:[[JWTCodingResultTypeError alloc] initWithError:error]];
         }
     }
     
     if (decodedDictionary) {
-        NSDictionary *headers = decodedDictionary[JWTCodingResultComponents.Headers];
-        NSDictionary *payload = decodedDictionary[JWTCodingResultComponents.Payload];
-        JWTClaimsSet *claimsSetResult = nil;
+        NSDictionary *headers = decodedDictionary[JWTCodingResultComponents.headers];
+        NSDictionary *payload = decodedDictionary[JWTCodingResultComponents.payload];
+        id<JWTClaimsSetProtocol> claimsSetStorage = nil;
         
         // extract claims from payload.
-        BOOL shouldExtractClaimsSet = YES; // add option later.
-        BOOL extractClaimsSet = claimsSet != nil || shouldExtractClaimsSet;
-        if (claimsSet || extractClaimsSet) {
-            NSArray *claimsSetKeys = [JWTClaimsSetSerializer claimsSetKeys];
-            NSSet *availableClaimsKeys = [payload keysOfEntriesPassingTest:^BOOL(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-                return [claimsSetKeys containsObject:key];
-            }];
-            NSDictionary *availableClaimsDictionary = [payload dictionaryWithValuesForKeys:availableClaimsKeys.allObjects];
-            BOOL claimsExists = availableClaimsKeys.count != 0;
-            if (claimsExists) {
-                JWTClaimsSet *extractedClaims = [JWTClaimsSetSerializer claimsSetWithDictionary:availableClaimsDictionary];
-                NSMutableDictionary *mutablePayload = [payload mutableCopy];
-                [mutablePayload removeObjectsForKeys:claimsSetKeys];
-                payload = [mutablePayload copy];
-                claimsSetResult = extractedClaims;
-            }
+        BOOL shouldExtractClaimsSetCoordinator = YES; // add option later.
+        BOOL extractClaimsSetCoordinator = claimsSetCoordinator != nil || shouldExtractClaimsSetCoordinator;
+        if (extractClaimsSetCoordinator) {
+            claimsSetStorage = [self.internalClaimsSetCoordinator.claimsSetSerializer claimsSetFromDictionary:payload];
         }
-        
-        result = [[JWTCodingResultType alloc] initWithSuccessResult:[[[JWTCodingResultTypeSuccess alloc] initWithHeaders:headers withPayload:payload] initWithClaimsSet:claimsSetResult]];
+        result = [[JWTCodingResultType alloc] initWithSuccessResult:[[[JWTCodingResultTypeSuccess alloc] initWithHeaders:headers withPayload:payload] initWithClaimsSetStorage:claimsSetStorage]];
     }
     else {
         NSLog(@"%@ something went wrong! result is nil!", self.debugDescription);
@@ -591,17 +580,9 @@
 
         NSError *algorithmError = nil;
         if (theSecretData && [algorithm respondsToSelector:@selector(verifyHash:signature:key:error:)]) {
-            signatureValid =
-            //[algorithm verifySignedInput:signingInput withSignature:signedPart verificationKeyData:theSecretData];
-            [algorithm verifyHash:[signingInput dataUsingEncoding:NSUTF8StringEncoding] signature:[JWTBase64Coder dataWithBase64UrlEncodedString:signedPart] key:theSecretData error:&algorithmError];
+            __auto_type hash = [self.internalTokenCoder dataWithString:signingInput];
+            signatureValid = [algorithm verifyHash:hash signature:[JWTBase64Coder dataWithBase64UrlEncodedString:signedPart] key:theSecretData error:&algorithmError];
         }
-//        if (theSecretData && [algorithm respondsToSelector:@selector(verifySignedInput:withSignature:verificationKeyData:)]) {
-//            signatureValid = [algorithm verifySignedInput:signingInput withSignature:signedPart verificationKeyData:theSecretData];
-//
-//            // Not used now.
-////        } else {
-////            signatureValid = [algorithm verifySignedInput:signingInput withSignature:signedPart verificationKey:theSecret];
-//        }
         
         if (algorithmError) {
             if (theError) {
@@ -639,8 +620,8 @@
     }
     
     NSDictionary *result = @{
-                             JWTCodingResultComponents.Headers : header,
-                             JWTCodingResultComponents.Payload : payload
+                             JWTCodingResultComponents.headers : header,
+                             JWTCodingResultComponents.payload : payload
                              };
     
     return result;

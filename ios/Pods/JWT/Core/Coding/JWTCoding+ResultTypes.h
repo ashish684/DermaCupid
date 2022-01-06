@@ -6,16 +6,13 @@
 //  Copyright © 2016 JWTIO. All rights reserved.
 //
 
-#import "JWTCoding.h"
-#import "JWTDeprecations.h"
-@class JWTClaimsSet;
-
-extern NSString *JWTCodingResultHeaders __deprecated_with_replacement("JWTCodingResultComponents.Headers");
-extern NSString *JWTCodingResultPayload __deprecated_with_replacement("JWTCodingResultComponents.Payload");
+#import <JWT/JWTCoding.h>
+#import <JWT/JWTDeprecations.h>
+@protocol JWTClaimsSetProtocol;
 
 @interface JWTCodingResultComponents : NSObject
-@property (copy, nonatomic, readonly, class) NSString *Headers;
-@property (copy, nonatomic, readonly, class) NSString *Payload;
+@property (copy, nonatomic, readonly, class) NSString *headers;
+@property (copy, nonatomic, readonly, class) NSString *payload;
 @end
 
 @interface JWT (ResultTypes) @end
@@ -43,16 +40,22 @@ extern NSString *JWTCodingResultPayload __deprecated_with_replacement("JWTCoding
 @property (copy, nonatomic, readonly) NSDictionary *headers;
 @property (copy, nonatomic, readonly) NSDictionary *payload;
 
-// dictionary @{
-//  JWTCodingResultHeaders : self.headers,
-//  JWTCodingResultPayload : self.payload
-//}
+/// This is a dictionary that contains header and payload.
+///
+/// @discussion
+/// You may access to its guts via `JWTCodingResultComponents`.
+///
+/// dictionary = {
+///   JWTCodingResultComponents.headers : headers,
+///   JWTCodingResultComponents.payload : payload
+/// }
+///
 @property (copy, nonatomic, readonly) NSDictionary *headerAndPayloadDictionary;
+@property (copy, nonatomic, readonly) id<JWTClaimsSetProtocol> claimsSetStorage;
 
-@property (copy, nonatomic, readonly) JWTClaimsSet *claimsSet;
 - (instancetype)initWithHeadersAndPayload:(NSDictionary *)headersAndPayloadDictionary;
 - (instancetype)initWithHeaders:(NSDictionary *)headers withPayload:(NSDictionary *)payload;
-- (instancetype)initWithClaimsSet:(JWTClaimsSet *)claimsSet;
+- (instancetype)initWithClaimsSetStorage:(id<JWTClaimsSetProtocol>)claimsSetStorage;
 @end
 
 // Public
