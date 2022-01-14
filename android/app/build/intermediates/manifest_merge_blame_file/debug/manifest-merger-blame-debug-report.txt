@@ -1,0 +1,634 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.derma.app"
+4    android:versionCode="7"
+5    android:versionName="1.6" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="29" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:5:5-65
+13-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:5:22-62
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:6:5-80
+14-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:6:22-78
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->[com.facebook.flipper:flipper:0.54.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/918338aff6ed9b183c9a7139c898d9ee/jetified-flipper-0.54.0/AndroidManifest.xml:16:5-76
+15-->[com.facebook.flipper:flipper:0.54.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/918338aff6ed9b183c9a7139c898d9ee/jetified-flipper-0.54.0/AndroidManifest.xml:16:22-73
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->[:react-native-firebase_auth] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
+16-->[:react-native-firebase_auth] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- TODO(salakar) Not sure if this should be part of the package manifest or leave to users app manifest code? -->
+17-->[:react-native-firebase_auth] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+17-->[:react-native-firebase_auth] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/auth/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-76
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->[:react-native-firebase_storage] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-80
+18-->[:react-native-firebase_storage] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-77
+19
+20    <queries>
+20-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-13:15
+21        <intent>
+21-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-12:18
+22            <action android:name="android.media.action.IMAGE_CAPTURE" />
+22-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-73
+22-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:21-70
+23        </intent>
+24    </queries> <!-- Required by older versions of Google Play services to create IID tokens -->
+25    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- for android -->
+25-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:25:5-82
+25-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:25:22-79
+26    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+27    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+28    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+29    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+30    <!-- for Samsung -->
+31    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+31-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+31-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+32    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+32-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+32-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+33    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+33-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+33-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+34    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+34-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+34-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+35    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+35-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+35-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+36    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+36-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+36-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+37    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+37-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+37-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+38    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+38-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+38-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+39    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+39-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+39-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+40    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+40-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+40-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+41    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+41-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+41-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+42    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+42-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+42-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+43    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+43-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+43-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+44    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+44-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+44-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+45    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+45-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+45-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+46    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+46-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+46-->[me.leolin:ShortcutBadger:1.1.22] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f17ce98aa8cb045664befb84faea2078/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+47    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+47-->[com.android.installreferrer:installreferrer:1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/01fd579e0676375c81a374b9d7278f59/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
+47-->[com.android.installreferrer:installreferrer:1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/01fd579e0676375c81a374b9d7278f59/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
+48
+49    <application
+49-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:8:5-49:19
+50        android:name="com.derma.app.MainApplication"
+50-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:9:7-38
+51        android:allowBackup="false"
+51-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:13:7-34
+52        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+52-->[androidx.core:core:1.3.2] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5047c6f29b3a54059407614ef2bce3f9/core-1.3.2/AndroidManifest.xml:24:18-86
+53        android:debuggable="true"
+54        android:icon="@mipmap/ic_launcher"
+54-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:11:7-41
+55        android:label="@string/app_name"
+55-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:10:7-39
+56        android:roundIcon="@mipmap/ic_launcher_round"
+56-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:12:7-52
+57        android:screenOrientation="portrait"
+57-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:15:7-43
+58        android:supportsRtl="true"
+58-->[com.facebook.android:facebook-android-sdk:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5eb75583b37334492cd1e886e6fc2a01/jetified-facebook-android-sdk-12.2.0/AndroidManifest.xml:28:18-44
+59        android:theme="@style/AppTheme"
+59-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:14:7-38
+60        android:usesCleartextTraffic="true" >
+60-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:16:7-42
+61        <meta-data
+61-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:17:7-18:50
+62            android:name="com.facebook.sdk.ApplicationId"
+62-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:17:18-63
+63            android:value="@string/facebook_app_id" />
+63-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:18:9-48
+64
+65        <activity
+65-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:20:5-23:44
+66            android:name="com.facebook.FacebookActivity"
+66-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:20:15-59
+67            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+67-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:21:9-109
+68            android:label="@string/app_name"
+68-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:23:9-41
+69            android:theme="@style/com_facebook_activity_theme" />
+69-->[com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:33:13-63
+70        <activity
+70-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:24:5-33:16
+71            android:name="com.facebook.CustomTabActivity"
+71-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:25:9-54
+72            android:exported="true" >
+72-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:26:9-32
+73            <intent-filter>
+73-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:27:9-32:25
+74                <action android:name="android.intent.action.VIEW" />
+74-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:28:13-65
+74-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:28:21-62
+75
+76                <category android:name="android.intent.category.DEFAULT" />
+76-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:29:13-72
+76-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:29:23-69
+77                <category android:name="android.intent.category.BROWSABLE" />
+77-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:30:13-74
+77-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:30:23-71
+78
+79                <data android:scheme="@string/fb_login_protocol_scheme" />
+79-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:31:13-71
+79-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:31:19-68
+80            </intent-filter>
+81            <intent-filter>
+81-->[com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:39:13-48:29
+82                <action android:name="android.intent.action.VIEW" />
+82-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:28:13-65
+82-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:28:21-62
+83
+84                <category android:name="android.intent.category.DEFAULT" />
+84-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:29:13-72
+84-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:29:23-69
+85                <category android:name="android.intent.category.BROWSABLE" />
+85-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:30:13-74
+85-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:30:23-71
+86
+87                <data
+87-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:31:13-71
+88                    android:host="cct.com.derma.app"
+89                    android:scheme="fbconnect" />
+89-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:31:19-68
+90            </intent-filter>
+91        </activity>
+92        <activity
+92-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:36:7-47:18
+93            android:name="com.derma.app.MainActivity"
+93-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:37:9-37
+94            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+94-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:39:9-86
+95            android:label="@string/app_name"
+95-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:38:9-41
+96            android:launchMode="singleTask"
+96-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:40:9-40
+97            android:screenOrientation="portrait"
+97-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:42:9-45
+98            android:windowSoftInputMode="adjustResize" >
+98-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:41:9-51
+99            <intent-filter>
+99-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:43:9-46:25
+100                <action android:name="android.intent.action.MAIN" />
+100-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:44:13-65
+100-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:44:21-62
+101
+102                <category android:name="android.intent.category.LAUNCHER" />
+102-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:45:13-73
+102-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:45:23-70
+103            </intent-filter>
+104        </activity>
+105        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+105-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:48:7-84
+105-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:48:17-81
+106
+107        <service android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService" />
+107-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-111
+107-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:18-108
+108        <service
+108-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-21:19
+109            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
+109-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-95
+110            android:exported="false" >
+110-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-37
+111            <intent-filter>
+111-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-20:29
+112                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+112-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:17-78
+112-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:25-75
+113            </intent-filter>
+114        </service>
+115
+116        <receiver
+116-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:9-30:20
+117            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
+117-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-96
+118            android:exported="true"
+118-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-36
+119            android:permission="com.google.android.c2dm.permission.SEND" >
+119-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-73
+120            <intent-filter>
+120-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-29:29
+121                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+121-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-81
+121-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-78
+122            </intent-filter>
+123        </receiver>
+124
+125        <meta-data
+125-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:32:9-34:36
+126            android:name="firebase_messaging_auto_init_enabled"
+126-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:33:13-64
+127            android:value="true" />
+127-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:13-33
+128        <meta-data
+128-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:9-37:32
+129            android:name="com.google.firebase.messaging.default_notification_channel_id"
+129-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-89
+130            android:value="" />
+130-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-29
+131        <meta-data
+131-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:9-40:47
+132            android:name="com.google.firebase.messaging.default_notification_color"
+132-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-84
+133            android:resource="@color/white" />
+133-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:40:13-44
+134
+135        <provider
+135-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-26:20
+136            android:name="androidx.core.content.FileProvider"
+136-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-62
+137            android:authorities="com.derma.app.provider"
+137-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-60
+138            android:exported="false"
+138-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+139            android:grantUriPermissions="true" >
+139-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-47
+140            <meta-data
+140-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:58
+141                android:name="android.support.FILE_PROVIDER_PATHS"
+141-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-67
+142                android:resource="@xml/provider_paths" />
+142-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-55
+143        </provider>
+144
+145        <activity
+145-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-30:72
+146            android:name="com.yalantis.ucrop.UCropActivity"
+146-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-60
+147            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+147-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-69
+148
+149        <provider
+149-->[:react-native-webview] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+150            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+150-->[:react-native-webview] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-83
+151            android:authorities="com.derma.app.fileprovider"
+151-->[:react-native-webview] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-64
+152            android:exported="false"
+152-->[:react-native-webview] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+153            android:grantUriPermissions="true" >
+153-->[:react-native-webview] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+154            <meta-data
+154-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:58
+155                android:name="android.support.FILE_PROVIDER_PATHS"
+155-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-67
+156                android:resource="@xml/file_provider_paths" />
+156-->[:react-native-image-crop-picker] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-55
+157        </provider>
+158
+159        <activity android:name="com.facebook.CustomTabMainActivity" />
+159-->[com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:34:9-71
+159-->[com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:34:19-68
+160
+161        <receiver
+161-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:28:9-35:20
+162            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+162-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:29:13-78
+163            android:exported="true"
+163-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:30:13-36
+164            android:permission="com.google.android.c2dm.permission.SEND" >
+164-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:31:13-73
+165            <intent-filter>
+165-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-29:29
+166                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+166-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-81
+166-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-78
+167            </intent-filter>
+168        </receiver>
+169        <!--
+170             FirebaseMessagingService performs security checks at runtime,
+171             but set to not exported to explicitly avoid allowing another app to call it.
+172        -->
+173        <service
+173-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:41:9-48:19
+174            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+174-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:42:13-82
+175            android:directBootAware="true"
+175-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:43:13-43
+176            android:exported="false" >
+176-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:44:13-37
+177            <intent-filter android:priority="-500" >
+177-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-20:29
+178                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+178-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:17-78
+178-->[:react-native-firebase_messaging] /Users/anshuman/Documents/DC/DermaCupid/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:25-75
+179            </intent-filter>
+180        </service>
+181        <service
+181-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:49:9-55:19
+182            android:name="com.google.firebase.components.ComponentDiscoveryService"
+182-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:50:13-84
+183            android:directBootAware="true"
+183-->[com.google.firebase:firebase-common:19.5.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d4bd0e5a08ee9212acd2a4e3a74d5374/jetified-firebase-common-19.5.0/AndroidManifest.xml:35:13-43
+184            android:exported="false" >
+184-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:51:13-37
+185            <meta-data
+185-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:52:13-54:85
+186                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+186-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:53:17-119
+187                android:value="com.google.firebase.components.ComponentRegistrar" />
+187-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:54:17-82
+188            <meta-data
+188-->[com.google.firebase:firebase-datatransport:17.0.10] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/126cab47b2982ed678baaec72767a3e8/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:28:13-30:85
+189                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+189-->[com.google.firebase:firebase-datatransport:17.0.10] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/126cab47b2982ed678baaec72767a3e8/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:29:17-115
+190                android:value="com.google.firebase.components.ComponentRegistrar" />
+190-->[com.google.firebase:firebase-datatransport:17.0.10] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/126cab47b2982ed678baaec72767a3e8/jetified-firebase-datatransport-17.0.10/AndroidManifest.xml:30:17-82
+191            <meta-data
+191-->[com.google.firebase:firebase-storage:19.2.1] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/7412003361cd66df051d714355a0dfd5/jetified-firebase-storage-19.2.1/AndroidManifest.xml:33:13-35:85
+192                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+192-->[com.google.firebase:firebase-storage:19.2.1] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/7412003361cd66df051d714355a0dfd5/jetified-firebase-storage-19.2.1/AndroidManifest.xml:34:17-107
+193                android:value="com.google.firebase.components.ComponentRegistrar" />
+193-->[com.google.firebase:firebase-storage:19.2.1] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/7412003361cd66df051d714355a0dfd5/jetified-firebase-storage-19.2.1/AndroidManifest.xml:35:17-82
+194            <meta-data
+194-->[com.google.firebase:firebase-database:19.6.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/506a1da749303e82ca4ba904fd0d0433/jetified-firebase-database-19.6.0/AndroidManifest.xml:32:13-34:85
+195                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+195-->[com.google.firebase:firebase-database:19.6.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/506a1da749303e82ca4ba904fd0d0433/jetified-firebase-database-19.6.0/AndroidManifest.xml:33:17-109
+196                android:value="com.google.firebase.components.ComponentRegistrar" />
+196-->[com.google.firebase:firebase-database:19.6.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/506a1da749303e82ca4ba904fd0d0433/jetified-firebase-database-19.6.0/AndroidManifest.xml:34:17-82
+197            <meta-data
+197-->[com.google.firebase:firebase-iid:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/418a32fee28c96a6324d0c03f5874215/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
+198                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+198-->[com.google.firebase:firebase-iid:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/418a32fee28c96a6324d0c03f5874215/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
+199                android:value="com.google.firebase.components.ComponentRegistrar" />
+199-->[com.google.firebase:firebase-iid:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/418a32fee28c96a6324d0c03f5874215/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
+200            <meta-data
+200-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:77:13-79:85
+201                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+201-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:78:17-109
+202                android:value="com.google.firebase.components.ComponentRegistrar" />
+202-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:79:17-82
+203            <meta-data
+203-->[com.google.firebase:firebase-installations:16.3.5] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f72b538e6779312f9de165ab0fa081f5/jetified-firebase-installations-16.3.5/AndroidManifest.xml:18:13-20:85
+204                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+204-->[com.google.firebase:firebase-installations:16.3.5] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f72b538e6779312f9de165ab0fa081f5/jetified-firebase-installations-16.3.5/AndroidManifest.xml:19:17-127
+205                android:value="com.google.firebase.components.ComponentRegistrar" />
+205-->[com.google.firebase:firebase-installations:16.3.5] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f72b538e6779312f9de165ab0fa081f5/jetified-firebase-installations-16.3.5/AndroidManifest.xml:20:17-82
+206            <!--
+207                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+208                clients to use it as well, by defining this registrar in their own core/common library.
+209            -->
+210            <meta-data
+210-->[com.google.firebase:firebase-common:19.5.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d4bd0e5a08ee9212acd2a4e3a74d5374/jetified-firebase-common-19.5.0/AndroidManifest.xml:43:13-45:85
+211                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+211-->[com.google.firebase:firebase-common:19.5.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d4bd0e5a08ee9212acd2a4e3a74d5374/jetified-firebase-common-19.5.0/AndroidManifest.xml:44:17-121
+212                android:value="com.google.firebase.components.ComponentRegistrar" />
+212-->[com.google.firebase:firebase-common:19.5.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d4bd0e5a08ee9212acd2a4e3a74d5374/jetified-firebase-common-19.5.0/AndroidManifest.xml:45:17-82
+213        </service>
+214        <service
+214-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/45ab7e9a7dedd75ebe6a0f6f89b15762/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+215            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+215-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/45ab7e9a7dedd75ebe6a0f6f89b15762/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+216            android:exported="false" >
+216-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/45ab7e9a7dedd75ebe6a0f6f89b15762/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+217            <meta-data
+217-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/45ab7e9a7dedd75ebe6a0f6f89b15762/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+218                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+218-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/45ab7e9a7dedd75ebe6a0f6f89b15762/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+219                android:value="cct" />
+219-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/45ab7e9a7dedd75ebe6a0f6f89b15762/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+220        </service>
+221        <service
+221-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/be02c635eae3ef713d4d961bcbfca057/jetified-transport-runtime-2.2.5/AndroidManifest.xml:26:9-30:19
+222            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+222-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/be02c635eae3ef713d4d961bcbfca057/jetified-transport-runtime-2.2.5/AndroidManifest.xml:27:13-117
+223            android:exported="false"
+223-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/be02c635eae3ef713d4d961bcbfca057/jetified-transport-runtime-2.2.5/AndroidManifest.xml:28:13-37
+224            android:permission="android.permission.BIND_JOB_SERVICE" >
+224-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/be02c635eae3ef713d4d961bcbfca057/jetified-transport-runtime-2.2.5/AndroidManifest.xml:29:13-69
+225        </service>
+226
+227        <receiver
+227-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/be02c635eae3ef713d4d961bcbfca057/jetified-transport-runtime-2.2.5/AndroidManifest.xml:32:9-34:40
+228            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+228-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/be02c635eae3ef713d4d961bcbfca057/jetified-transport-runtime-2.2.5/AndroidManifest.xml:33:13-132
+229            android:exported="false" />
+229-->[com.google.android.datatransport:transport-runtime:2.2.5] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/be02c635eae3ef713d4d961bcbfca057/jetified-transport-runtime-2.2.5/AndroidManifest.xml:34:13-37
+230
+231        <meta-data
+231-->[com.github.bumptech.glide:okhttp3-integration:4.11.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/169207e62698d0615a87098351897a98/jetified-okhttp3-integration-4.11.0/AndroidManifest.xml:11:9-13:43
+232            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+232-->[com.github.bumptech.glide:okhttp3-integration:4.11.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/169207e62698d0615a87098351897a98/jetified-okhttp3-integration-4.11.0/AndroidManifest.xml:12:13-84
+233            android:value="GlideModule" />
+233-->[com.github.bumptech.glide:okhttp3-integration:4.11.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/169207e62698d0615a87098351897a98/jetified-okhttp3-integration-4.11.0/AndroidManifest.xml:13:13-40
+234
+235        <activity
+235-->[com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/13952a647a9e8e855bd6a10294ee3147/jetified-play-services-auth-19.0.0/AndroidManifest.xml:23:9-27:75
+236            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+236-->[com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/13952a647a9e8e855bd6a10294ee3147/jetified-play-services-auth-19.0.0/AndroidManifest.xml:24:13-93
+237            android:excludeFromRecents="true"
+237-->[com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/13952a647a9e8e855bd6a10294ee3147/jetified-play-services-auth-19.0.0/AndroidManifest.xml:25:13-46
+238            android:exported="false"
+238-->[com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/13952a647a9e8e855bd6a10294ee3147/jetified-play-services-auth-19.0.0/AndroidManifest.xml:26:13-37
+239            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+239-->[com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/13952a647a9e8e855bd6a10294ee3147/jetified-play-services-auth-19.0.0/AndroidManifest.xml:27:13-72
+240        <!--
+241            Service handling Google Sign-In user revocation. For apps that do not integrate with
+242            Google Sign-In, this service will never be started.
+243        -->
+244        <service
+244-->[com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/13952a647a9e8e855bd6a10294ee3147/jetified-play-services-auth-19.0.0/AndroidManifest.xml:33:9-37:51
+245            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+245-->[com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/13952a647a9e8e855bd6a10294ee3147/jetified-play-services-auth-19.0.0/AndroidManifest.xml:34:13-89
+246            android:exported="true"
+246-->[com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/13952a647a9e8e855bd6a10294ee3147/jetified-play-services-auth-19.0.0/AndroidManifest.xml:35:13-36
+247            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+247-->[com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/13952a647a9e8e855bd6a10294ee3147/jetified-play-services-auth-19.0.0/AndroidManifest.xml:36:13-107
+248            android:visibleToInstantApps="true" />
+248-->[com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/13952a647a9e8e855bd6a10294ee3147/jetified-play-services-auth-19.0.0/AndroidManifest.xml:37:13-48
+249        <!--
+250         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+251         with the application context. This config is merged in with the host app's manifest,
+252         but there can only be one provider with the same authority activated at any given
+253         point; so if the end user has two or more different apps that use Facebook SDK, only the
+254         first one will be able to use the provider. To work around this problem, we use the
+255         following placeholder in the authority to identify each host application as if it was
+256         a completely different provider.
+257        -->
+258        <provider
+258-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:39:9-42:40
+259            android:name="com.facebook.internal.FacebookInitProvider"
+259-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:40:13-70
+260            android:authorities="com.derma.app.FacebookInitProvider"
+260-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:41:13-72
+261            android:exported="false" />
+261-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:42:13-37
+262
+263        <receiver
+263-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:44:9-50:20
+264            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+264-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:45:13-86
+265            android:exported="false" >
+265-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:46:13-37
+266            <intent-filter>
+266-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:47:13-49:29
+267                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+267-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:48:17-95
+267-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:48:25-92
+268            </intent-filter>
+269        </receiver>
+270        <receiver
+270-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:51:9-57:20
+271            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+271-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:52:13-118
+272            android:exported="false" >
+272-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:53:13-37
+273            <intent-filter>
+273-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:54:13-56:29
+274                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+274-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:55:17-103
+274-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:55:25-100
+275            </intent-filter>
+276        </receiver>
+277
+278        <activity
+278-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:27:9-44:20
+279            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+279-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:28:13-80
+280            android:excludeFromRecents="true"
+280-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:29:13-46
+281            android:exported="true"
+281-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:30:13-36
+282            android:launchMode="singleTask"
+282-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:31:13-44
+283            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+283-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:32:13-72
+284            <intent-filter>
+284-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:33:13-43:29
+285                <action android:name="android.intent.action.VIEW" />
+285-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:28:13-65
+285-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:28:21-62
+286
+287                <category android:name="android.intent.category.DEFAULT" />
+287-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:29:13-72
+287-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:29:23-69
+288                <category android:name="android.intent.category.BROWSABLE" />
+288-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:30:13-74
+288-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:30:23-71
+289
+290                <data
+290-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:31:13-71
+291                    android:host="firebase.auth"
+292                    android:path="/"
+293                    android:scheme="genericidp" />
+293-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:31:19-68
+294            </intent-filter>
+295        </activity>
+296        <activity
+296-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:45:9-62:20
+297            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+297-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:46:13-79
+298            android:excludeFromRecents="true"
+298-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:47:13-46
+299            android:exported="true"
+299-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:48:13-36
+300            android:launchMode="singleTask"
+300-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:49:13-44
+301            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+301-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:50:13-72
+302            <intent-filter>
+302-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:51:13-61:29
+303                <action android:name="android.intent.action.VIEW" />
+303-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:28:13-65
+303-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:28:21-62
+304
+305                <category android:name="android.intent.category.DEFAULT" />
+305-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:29:13-72
+305-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:29:23-69
+306                <category android:name="android.intent.category.BROWSABLE" />
+306-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:30:13-74
+306-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:30:23-71
+307
+308                <data
+308-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:31:13-71
+309                    android:host="firebase.auth"
+310                    android:path="/"
+311                    android:scheme="recaptcha" />
+311-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:31:19-68
+312            </intent-filter>
+313        </activity>
+314
+315        <service
+315-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:64:9-73:19
+316            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+316-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:65:13-101
+317            android:enabled="true"
+317-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:66:13-35
+318            android:exported="false" >
+318-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:67:13-37
+319            <intent-filter>
+319-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:68:13-72:29
+320                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+320-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:69:17-89
+320-->[com.google.firebase:firebase-auth:20.0.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/f509e744b5e6da9c05b17134b77aa5b5/jetified-firebase-auth-20.0.3/AndroidManifest.xml:69:25-86
+321
+322                <category android:name="android.intent.category.DEFAULT" />
+322-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:29:13-72
+322-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:29:23-69
+323            </intent-filter>
+324        </service>
+325
+326        <activity
+326-->[com.google.android.gms:play-services-base:17.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/e3f9ab849aa02066b46936dccf969b45/jetified-play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+327            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+327-->[com.google.android.gms:play-services-base:17.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/e3f9ab849aa02066b46936dccf969b45/jetified-play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+328            android:exported="false"
+328-->[com.google.android.gms:play-services-base:17.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/e3f9ab849aa02066b46936dccf969b45/jetified-play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+329            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+329-->[com.google.android.gms:play-services-base:17.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/e3f9ab849aa02066b46936dccf969b45/jetified-play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+330
+331        <provider
+331-->[com.google.firebase:firebase-common:19.5.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d4bd0e5a08ee9212acd2a4e3a74d5374/jetified-firebase-common-19.5.0/AndroidManifest.xml:26:9-31:39
+332            android:name="com.google.firebase.provider.FirebaseInitProvider"
+332-->[com.google.firebase:firebase-common:19.5.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d4bd0e5a08ee9212acd2a4e3a74d5374/jetified-firebase-common-19.5.0/AndroidManifest.xml:27:13-77
+333            android:authorities="com.derma.app.firebaseinitprovider"
+333-->[com.google.firebase:firebase-common:19.5.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d4bd0e5a08ee9212acd2a4e3a74d5374/jetified-firebase-common-19.5.0/AndroidManifest.xml:28:13-72
+334            android:directBootAware="true"
+334-->[com.google.firebase:firebase-common:19.5.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d4bd0e5a08ee9212acd2a4e3a74d5374/jetified-firebase-common-19.5.0/AndroidManifest.xml:29:13-43
+335            android:exported="false"
+335-->[com.google.firebase:firebase-common:19.5.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d4bd0e5a08ee9212acd2a4e3a74d5374/jetified-firebase-common-19.5.0/AndroidManifest.xml:30:13-37
+336            android:initOrder="100" />
+336-->[com.google.firebase:firebase-common:19.5.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d4bd0e5a08ee9212acd2a4e3a74d5374/jetified-firebase-common-19.5.0/AndroidManifest.xml:31:13-36
+337
+338        <meta-data
+338-->[com.google.android.gms:play-services-basement:17.1.1] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/bbb3213ea2e48c7d986dbaa04426fc15/jetified-play-services-basement-17.1.1/AndroidManifest.xml:23:9-25:69
+339            android:name="com.google.android.gms.version"
+339-->[com.google.android.gms:play-services-basement:17.1.1] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/bbb3213ea2e48c7d986dbaa04426fc15/jetified-play-services-basement-17.1.1/AndroidManifest.xml:24:13-58
+340            android:value="@integer/google_play_services_version" />
+340-->[com.google.android.gms:play-services-basement:17.1.1] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/bbb3213ea2e48c7d986dbaa04426fc15/jetified-play-services-basement-17.1.1/AndroidManifest.xml:25:13-66
+341    </application>
+342
+343</manifest>

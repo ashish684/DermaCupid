@@ -8,7 +8,7 @@ import {
   AccessToken,
   GraphRequest,
   GraphRequestManager,
-} from 'react-native-fbsdk';
+} from 'react-native-fbsdk-next';
 
 import auth from '@react-native-firebase/auth';
 import firebase from '@react-native-firebase/app';

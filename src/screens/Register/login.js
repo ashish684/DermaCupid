@@ -25,7 +25,7 @@ import {
   AccessToken,
   GraphRequest,
   GraphRequestManager,
-} from 'react-native-fbsdk';
+} from 'react-native-fbsdk-next';
 import {Loader} from '../../components/modals';
 
 export default class Login extends React.Component {

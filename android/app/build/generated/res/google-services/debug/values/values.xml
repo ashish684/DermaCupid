@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">613215646162-skvu81obaaf7pgq5vhef71pdbclspkr9.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://derma-cupid-94d0a.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">613215646162</string>
+    <string name="google_api_key" translatable="false">AIzaSyB2u4Z2rN_H1m621XQ0rv1S2ryufSOY4V0</string>
+    <string name="google_app_id" translatable="false">1:613215646162:android:216ce6cba2d1a766a0980b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB2u4Z2rN_H1m621XQ0rv1S2ryufSOY4V0</string>
+    <string name="google_storage_bucket" translatable="false">derma-cupid-94d0a.appspot.com</string>
+    <string name="project_id" translatable="false">derma-cupid-94d0a</string>
+</resources>

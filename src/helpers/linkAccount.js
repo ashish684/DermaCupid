@@ -1,4 +1,4 @@
-import {LoginManager, AccessToken} from 'react-native-fbsdk';
+import {LoginManager, AccessToken} from 'react-native-fbsdk-next';
 
 import auth from '@react-native-firebase/auth';
 import database from '@react-native-firebase/database';

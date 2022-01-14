@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JWTDeprecations.h"
+#import <JWT/JWTDeprecations.h>
 
 @protocol JWTAlgorithm <NSObject>
 
@@ -16,14 +16,15 @@
  Signs data using provided secret data.
  @param hash The data to sign.
  @param key The secret to use for signing.
- @param error The inout error.
+ @param error The error.
  */
 - (NSData *)signHash:(NSData *)hash key:(NSData *)key error:(NSError *__autoreleasing*)error;
 /**
- Verifies data using.
- @param hash The data to sign.
- @param signature The secret to use for signing.
- @param error The inout error.
+ Verifies data using key.
+ @param hash The data to verify.
+ @param signature The secret to use for verifying.
+ @param key The key to verify data.
+ @param error The error.
  */
 - (BOOL)verifyHash:(NSData *)hash signature:(NSData *)signature key:(NSData *)key error:(NSError *__autoreleasing*)error;
 
@@ -31,6 +32,7 @@
 
 @property (nonatomic, readonly, copy) NSString *name;
 
+@optional
 /**
  Encodes and encrypts the provided payload using the provided secret key
  @param theString The string to encode
@@ -56,7 +58,7 @@
  @param theSecretData The secret data to use for encryption
  @return An NSData object containing the encrypted payload, or nil if something went wrong.
  */
-- (NSData *)encodePayloadData:(NSData *)theStringData withSecret:(NSData *)theSecretData;
+- (NSData *)encodePayloadData:(NSData *)theStringData withSecret:(NSData *)theSecretData __deprecated_and_will_be_removed_in_release_version(JWTVersion_3_0_0);
 
 /**
  Verifies the provided signature using the signed input and verification key (as data)
@@ -65,5 +67,5 @@
  @param verificationKeyData The key data to use for verifying the signature
  @return YES if the provided signature is valid, NO otherwise
  */
-- (BOOL)verifySignedInput:(NSString *)input withSignature:(NSString *)signature verificationKeyData:(NSData *)verificationKeyData;
+- (BOOL)verifySignedInput:(NSString *)input withSignature:(NSString *)signature verificationKeyData:(NSData *)verificationKeyData __deprecated_and_will_be_removed_in_release_version(JWTVersion_3_0_0);
 @end
