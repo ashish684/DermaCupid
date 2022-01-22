@@ -1,17 +1,9 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
-import {
-  TextInput,
-  HelperText,
-  Button,
-  Headline,
-  Title,
-} from 'react-native-paper';
 import {Input, Item, Icon, Picker} from 'native-base';
 
 import auth from '@react-native-firebase/auth';
 import database from '@react-native-firebase/database';
-
 import countryCodes from '../../assets/countryCodes.json';
 import Carousel from './carousel';
 import AntDesign from 'react-native-vector-icons/AntDesign';
