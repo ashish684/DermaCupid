@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/anshuman/Documents/DC/DermaCupid/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
+            "outputFile": "D:\\Projects\\DermaCupid\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "/Users/anshuman/.gradle/caches/transforms-2/files-2.1/037afe3defd2217a4905971d16cc875a/material-1.1.0/res/values-small-v4/values-small-v4.xml",
+                    "source": "C:\\Users\\Sakshi\\.gradle\\caches\\transforms-2\\files-2.1\\037afe3defd2217a4905971d16cc875a\\material-1.1.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

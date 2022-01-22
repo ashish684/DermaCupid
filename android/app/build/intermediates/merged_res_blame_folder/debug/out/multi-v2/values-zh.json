@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/anshuman/Documents/DC/DermaCupid/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+            "outputFile": "D:\\Projects\\DermaCupid\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
-                    "source": "/Users/anshuman/.gradle/caches/transforms-2/files-2.1/3814bec25a135808a034e133904f9617/jetified-ucrop-2.2.6-native/res/values-zh/values-zh.xml",
+                    "source": "C:\\Users\\Sakshi\\.gradle\\caches\\transforms-2\\files-2.1\\3814bec25a135808a034e133904f9617\\jetified-ucrop-2.2.6-native\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
