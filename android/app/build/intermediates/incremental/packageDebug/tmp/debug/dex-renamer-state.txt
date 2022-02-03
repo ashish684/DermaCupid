@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 #Tue Jan 18 23:22:44 IST 2022
 base.2=D\:\\Projects\\DermaCupid\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
+=======
+#Sun Jan 23 01:45:14 IST 2022
+>>>>>>> 57c23f82f7e2e996577677db5ee58e15908f25d4
 path.2=classes3.dex
 base.1=D\:\\Projects\\DermaCupid\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
 path.1=classes2.dex

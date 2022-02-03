@@ -4,7 +4,11 @@
     <!-- Automatically generated file. DO NOT MODIFY -->
 
     <!-- Value from build type: debug -->
+<<<<<<< HEAD
     <string name="CODE_PUSH_APK_BUILD_TIME" translatable="false">"1642531368016"</string>
+=======
+    <string name="CODE_PUSH_APK_BUILD_TIME" translatable="false">"1642882486662"</string>
+>>>>>>> 57c23f82f7e2e996577677db5ee58e15908f25d4
     <!-- Value from build type: debug -->
     <integer name="react_native_dev_server_port">8081</integer>
     <!-- Value from build type: debug -->

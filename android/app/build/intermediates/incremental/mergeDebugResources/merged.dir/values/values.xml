@@ -886,7 +886,11 @@
     <item quantity="one"><ns1:g id="count">%d</ns1:g> new notification</item>
     <item quantity="other"><ns1:g id="count">%d</ns1:g> new notifications</item>
   </plurals>
+<<<<<<< HEAD
     <string name="CODE_PUSH_APK_BUILD_TIME" translatable="false">"1642531368016"</string>
+=======
+    <string name="CODE_PUSH_APK_BUILD_TIME" translatable="false">"1642882486662"</string>
+>>>>>>> 57c23f82f7e2e996577677db5ee58e15908f25d4
     <string name="CodePushDeploymentKey">YpQXw_UMpzF2iwot5jCGxdqW3JTrbQvKFzMWs</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
