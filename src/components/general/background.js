@@ -5,7 +5,7 @@ import LinearGradient from 'react-native-linear-gradient';
 
 const DermaBackground = (props) =>
   <LinearGradient colors={THEME.GRADIENT_BG.PAIR} style={{ ...style.view, ...props.style }}>
-    <StatusBar barStyle="dark-content" backgroundColor={THEME.GRADIENT_BG.START_COLOR} />
+    <StatusBar barStyle="light-content" backgroundColor={THEME.GRADIENT_BG.START_COLOR} />
     {
       props.children
     }

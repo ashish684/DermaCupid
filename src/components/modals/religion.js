@@ -19,7 +19,6 @@ import DEFAULT_BUTTON, {BUTTON_WITH_PARAM} from '../general/button';
 import {OptimizedFlatList} from 'react-native-optimized-flatlist';
 import {Chip} from 'react-native-paper';
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-import {TextIn} from "../Fields";
 
 class MultiChoicePicker extends React.Component {
   constructor(props) {

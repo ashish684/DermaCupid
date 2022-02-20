@@ -34,11 +34,11 @@ MERGED from [:react-native-svg] /Users/anshuman/Documents/DC/DermaCupid/node_mod
 MERGED from [:react-native-vector-icons] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-webview] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-21:12
 MERGED from [com.facebook.react:react-native:0.63.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/819a2d7b470fb689f7c4f0853830a1cd/jetified-react-native-0.63.3/AndroidManifest.xml:2:1-13:12
-MERGED from [com.facebook.android:facebook-android-sdk:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5eb75583b37334492cd1e886e6fc2a01/jetified-facebook-android-sdk-12.2.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-login:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d08f74640207de4846a9008c9da7190e/jetified-facebook-login-12.2.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-gamingservices:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/4fbffd6d55a01cabcbaa33a1e12d483d/jetified-facebook-gamingservices-12.2.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-share:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/71b0a620aabe2b5f6727a87d8d8bd0bd/jetified-facebook-share-12.2.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:21:1-52:12
+MERGED from [com.facebook.android:facebook-android-sdk:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5eb75583b37334492cd1e886e6fc2a01/jetified-facebook-android-sdk-12.2.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-login:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d08f74640207de4846a9008c9da7190e/jetified-facebook-login-12.2.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-gamingservices:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/2b0697a6aec19e84dde88f65839bae7b/jetified-facebook-gamingservices-12.3.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-share:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/71b0a620aabe2b5f6727a87d8d8bd0bd/jetified-facebook-share-12.2.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:21:1-52:12
 MERGED from [androidx.browser:browser:1.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d4dcd7b07ea83ed6e8ad1d0da7b4caac/browser-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/3e14c0289cd95af9784f44fcf36b9e77/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/32330da655092557770c255f56506abd/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -76,9 +76,9 @@ MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/anshuman/.gradle/c
 MERGED from [com.google.firebase:firebase-storage:19.2.1] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/7412003361cd66df051d714355a0dfd5/jetified-firebase-storage-19.2.1/AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.firebase:firebase-database:19.6.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/506a1da749303e82ca4ba904fd0d0433/jetified-firebase-database-19.6.0/AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/13952a647a9e8e855bd6a10294ee3147/jetified-play-services-auth-19.0.0/AndroidManifest.xml:17:1-40:12
-MERGED from [com.facebook.android:facebook-applinks:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/dd2090cbe597309be40a2c875fe3a929/jetified-facebook-applinks-12.2.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-messenger:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/87bbff8267a351f8673b91a933536e45/jetified-facebook-messenger-12.2.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:21:1-60:12
+MERGED from [com.facebook.android:facebook-applinks:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/dd2090cbe597309be40a2c875fe3a929/jetified-facebook-applinks-12.2.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-messenger:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/87bbff8267a351f8673b91a933536e45/jetified-facebook-messenger-12.2.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:21:1-60:12
 MERGED from [com.google.firebase:firebase-iid:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/418a32fee28c96a6324d0c03f5874215/jetified-firebase-iid-21.1.0/AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/330d4e022f4e8c939a3db529e499bcb7/jetified-play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/3bbde98062fb43e9df58d38f969a857d/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -215,16 +215,16 @@ MERGED from [:react-native-webview] /Users/anshuman/Documents/DC/DermaCupid/node
 MERGED from [:react-native-webview] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-19:19
 MERGED from [com.facebook.react:react-native:0.63.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/819a2d7b470fb689f7c4f0853830a1cd/jetified-react-native-0.63.3/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.63.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/819a2d7b470fb689f7c4f0853830a1cd/jetified-react-native-0.63.3/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5eb75583b37334492cd1e886e6fc2a01/jetified-facebook-android-sdk-12.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-android-sdk:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5eb75583b37334492cd1e886e6fc2a01/jetified-facebook-android-sdk-12.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d08f74640207de4846a9008c9da7190e/jetified-facebook-login-12.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d08f74640207de4846a9008c9da7190e/jetified-facebook-login-12.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-gamingservices:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/4fbffd6d55a01cabcbaa33a1e12d483d/jetified-facebook-gamingservices-12.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-gamingservices:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/4fbffd6d55a01cabcbaa33a1e12d483d/jetified-facebook-gamingservices-12.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/71b0a620aabe2b5f6727a87d8d8bd0bd/jetified-facebook-share-12.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/71b0a620aabe2b5f6727a87d8d8bd0bd/jetified-facebook-share-12.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:29:5-50:19
-MERGED from [com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:29:5-50:19
+MERGED from [com.facebook.android:facebook-android-sdk:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5eb75583b37334492cd1e886e6fc2a01/jetified-facebook-android-sdk-12.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-android-sdk:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5eb75583b37334492cd1e886e6fc2a01/jetified-facebook-android-sdk-12.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d08f74640207de4846a9008c9da7190e/jetified-facebook-login-12.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d08f74640207de4846a9008c9da7190e/jetified-facebook-login-12.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-gamingservices:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/2b0697a6aec19e84dde88f65839bae7b/jetified-facebook-gamingservices-12.3.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-gamingservices:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/2b0697a6aec19e84dde88f65839bae7b/jetified-facebook-gamingservices-12.3.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/71b0a620aabe2b5f6727a87d8d8bd0bd/jetified-facebook-share-12.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/71b0a620aabe2b5f6727a87d8d8bd0bd/jetified-facebook-share-12.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:29:5-50:19
+MERGED from [com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:29:5-50:19
 MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/be56412cdc80ea5277557ef88bd8e147/jetified-soloader-0.9.0/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/be56412cdc80ea5277557ef88bd8e147/jetified-soloader-0.9.0/AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/037afe3defd2217a4905971d16cc875a/material-1.1.0/AndroidManifest.xml:22:5-20
@@ -245,12 +245,12 @@ MERGED from [com.google.firebase:firebase-database:19.6.0] /Users/anshuman/.grad
 MERGED from [com.google.firebase:firebase-database:19.6.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/506a1da749303e82ca4ba904fd0d0433/jetified-firebase-database-19.6.0/AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/13952a647a9e8e855bd6a10294ee3147/jetified-play-services-auth-19.0.0/AndroidManifest.xml:22:5-38:19
 MERGED from [com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/13952a647a9e8e855bd6a10294ee3147/jetified-play-services-auth-19.0.0/AndroidManifest.xml:22:5-38:19
-MERGED from [com.facebook.android:facebook-applinks:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/dd2090cbe597309be40a2c875fe3a929/jetified-facebook-applinks-12.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/dd2090cbe597309be40a2c875fe3a929/jetified-facebook-applinks-12.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/87bbff8267a351f8673b91a933536e45/jetified-facebook-messenger-12.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/87bbff8267a351f8673b91a933536e45/jetified-facebook-messenger-12.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:28:5-58:19
-MERGED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:28:5-58:19
+MERGED from [com.facebook.android:facebook-applinks:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/dd2090cbe597309be40a2c875fe3a929/jetified-facebook-applinks-12.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/dd2090cbe597309be40a2c875fe3a929/jetified-facebook-applinks-12.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/87bbff8267a351f8673b91a933536e45/jetified-facebook-messenger-12.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/87bbff8267a351f8673b91a933536e45/jetified-facebook-messenger-12.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:28:5-58:19
+MERGED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:28:5-58:19
 MERGED from [com.google.firebase:firebase-iid:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/418a32fee28c96a6324d0c03f5874215/jetified-firebase-iid-21.1.0/AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-iid:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/418a32fee28c96a6324d0c03f5874215/jetified-firebase-iid-21.1.0/AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/330d4e022f4e8c939a3db529e499bcb7/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
@@ -291,7 +291,7 @@ MERGED from [com.android.installreferrer:installreferrer:1.0] /Users/anshuman/.g
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.2] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5047c6f29b3a54059407614ef2bce3f9/core-1.3.2/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from [com.facebook.android:facebook-android-sdk:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5eb75583b37334492cd1e886e6fc2a01/jetified-facebook-android-sdk-12.2.0/AndroidManifest.xml:28:18-44
+		ADDED from [com.facebook.android:facebook-android-sdk:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5eb75583b37334492cd1e886e6fc2a01/jetified-facebook-android-sdk-12.2.0/AndroidManifest.xml:28:18-44
 	android:label
 		ADDED from /Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:10:7-39
 		ADDED from /Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:10:7-39
@@ -324,22 +324,22 @@ ADDED from /Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidM
 		ADDED from /Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:17:18-63
 activity#com.facebook.FacebookActivity
 ADDED from /Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:20:5-23:44
-MERGED from [com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:30:9-33:66
-MERGED from [com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:30:9-33:66
+MERGED from [com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:30:9-33:66
+MERGED from [com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:30:9-33:66
 	android:label
 		ADDED from /Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:23:9-41
 	android:configChanges
 		ADDED from /Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:21:9-109
 	android:theme
-		ADDED from [com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:33:13-63
+		ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:33:13-63
 	android:name
 		ADDED from /Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:20:15-59
 activity#com.facebook.CustomTabActivity
 ADDED from /Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:24:5-33:16
-MERGED from [com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:35:9-49:20
-MERGED from [com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:35:9-49:20
+MERGED from [com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:35:9-49:20
+MERGED from [com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:35:9-49:20
 	tools:node
-		ADDED from [com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:38:13-31
+		ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:38:13-31
 	android:exported
 		ADDED from /Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:26:9-32
 	android:name
@@ -454,16 +454,16 @@ MERGED from [:react-native-webview] /Users/anshuman/Documents/DC/DermaCupid/node
 MERGED from [:react-native-webview] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.63.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/819a2d7b470fb689f7c4f0853830a1cd/jetified-react-native-0.63.3/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.63.3] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/819a2d7b470fb689f7c4f0853830a1cd/jetified-react-native-0.63.3/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.android:facebook-android-sdk:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5eb75583b37334492cd1e886e6fc2a01/jetified-facebook-android-sdk-12.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-android-sdk:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5eb75583b37334492cd1e886e6fc2a01/jetified-facebook-android-sdk-12.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d08f74640207de4846a9008c9da7190e/jetified-facebook-login-12.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d08f74640207de4846a9008c9da7190e/jetified-facebook-login-12.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-gamingservices:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/4fbffd6d55a01cabcbaa33a1e12d483d/jetified-facebook-gamingservices-12.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-gamingservices:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/4fbffd6d55a01cabcbaa33a1e12d483d/jetified-facebook-gamingservices-12.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/71b0a620aabe2b5f6727a87d8d8bd0bd/jetified-facebook-share-12.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/71b0a620aabe2b5f6727a87d8d8bd0bd/jetified-facebook-share-12.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:25:5-27:41
-MERGED from [com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:25:5-27:41
+MERGED from [com.facebook.android:facebook-android-sdk:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5eb75583b37334492cd1e886e6fc2a01/jetified-facebook-android-sdk-12.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5eb75583b37334492cd1e886e6fc2a01/jetified-facebook-android-sdk-12.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d08f74640207de4846a9008c9da7190e/jetified-facebook-login-12.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d08f74640207de4846a9008c9da7190e/jetified-facebook-login-12.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-gamingservices:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/2b0697a6aec19e84dde88f65839bae7b/jetified-facebook-gamingservices-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-gamingservices:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/2b0697a6aec19e84dde88f65839bae7b/jetified-facebook-gamingservices-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/71b0a620aabe2b5f6727a87d8d8bd0bd/jetified-facebook-share-12.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/71b0a620aabe2b5f6727a87d8d8bd0bd/jetified-facebook-share-12.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:25:5-27:41
+MERGED from [com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:25:5-27:41
 MERGED from [androidx.browser:browser:1.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d4dcd7b07ea83ed6e8ad1d0da7b4caac/browser-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.browser:browser:1.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/d4dcd7b07ea83ed6e8ad1d0da7b4caac/browser-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/3e14c0289cd95af9784f44fcf36b9e77/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
@@ -538,12 +538,12 @@ MERGED from [com.google.firebase:firebase-database:19.6.0] /Users/anshuman/.grad
 MERGED from [com.google.firebase:firebase-database:19.6.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/506a1da749303e82ca4ba904fd0d0433/jetified-firebase-database-19.6.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/13952a647a9e8e855bd6a10294ee3147/jetified-play-services-auth-19.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/13952a647a9e8e855bd6a10294ee3147/jetified-play-services-auth-19.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.android:facebook-applinks:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/dd2090cbe597309be40a2c875fe3a929/jetified-facebook-applinks-12.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/dd2090cbe597309be40a2c875fe3a929/jetified-facebook-applinks-12.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/87bbff8267a351f8673b91a933536e45/jetified-facebook-messenger-12.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/87bbff8267a351f8673b91a933536e45/jetified-facebook-messenger-12.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/dd2090cbe597309be40a2c875fe3a929/jetified-facebook-applinks-12.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/dd2090cbe597309be40a2c875fe3a929/jetified-facebook-applinks-12.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/87bbff8267a351f8673b91a933536e45/jetified-facebook-messenger-12.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/87bbff8267a351f8673b91a933536e45/jetified-facebook-messenger-12.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:24:5-26:41
 MERGED from [com.google.firebase:firebase-iid:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/418a32fee28c96a6324d0c03f5874215/jetified-firebase-iid-21.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/418a32fee28c96a6324d0c03f5874215/jetified-firebase-iid-21.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/330d4e022f4e8c939a3db529e499bcb7/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
@@ -813,13 +813,13 @@ ADDED from [:react-native-webview] /Users/anshuman/Documents/DC/DermaCupid/node_
 	android:name
 		ADDED from [:react-native-webview] /Users/anshuman/Documents/DC/DermaCupid/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-83
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:34:9-71
+ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:34:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:34:19-68
+		ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:34:19-68
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:cct.${applicationId}+data:scheme:fbconnect
-ADDED from [com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:39:13-48:29
+ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:39:13-48:29
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:cct.com.derma.app+data:scheme:fbconnect
-ADDED from [com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:39:13-48:29
+ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:39:13-48:29
 uses-permission#com.google.android.c2dm.permission.RECEIVE
 ADDED from [com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:25:5-82
 MERGED from [com.google.firebase:firebase-iid:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/418a32fee28c96a6324d0c03f5874215/jetified-firebase-iid-21.1.0/AndroidManifest.xml:26:5-82
@@ -947,37 +947,37 @@ ADDED from [com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.g
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:19.0.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/13952a647a9e8e855bd6a10294ee3147/jetified-play-services-auth-19.0.0/AndroidManifest.xml:34:13-89
 provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:39:9-42:40
+ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:39:9-42:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:41:13-72
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:41:13-72
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:42:13-37
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:40:13-70
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:40:13-70
 receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:44:9-50:20
+ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:44:9-50:20
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:46:13-37
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:45:13-86
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:45:13-86
 intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:47:13-49:29
+ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:47:13-49:29
 action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:48:17-95
+ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:48:17-95
 	android:name
-		ADDED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:48:25-92
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:48:25-92
 receiver#com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:51:9-57:20
+ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:51:9-57:20
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:53:13-37
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:53:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:52:13-118
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:52:13-118
 intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:54:13-56:29
+ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:54:13-56:29
 action#com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:55:17-103
+ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:55:17-103
 	android:name
-		ADDED from [com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:55:25-100
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:55:25-100
 meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
 ADDED from [com.google.firebase:firebase-iid:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/418a32fee28c96a6324d0c03f5874215/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
 	android:value

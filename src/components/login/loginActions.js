@@ -77,6 +77,7 @@ const FacebookButton = (props) => (
 );
 
 const PhoneButton = (props) => (
+  
   <View style={[loginAction.button, {marginBottom: 20}]}>
     <TouchableOpacity
       onPress={props.phoneLogin}
@@ -157,6 +158,7 @@ class LoginAction extends React.Component {
   };
 
   render() {
+    console.log("Anshuman", this.props.navigateTo);
     return (
       <View style={loginAction.container}>
         <FacebookButton
@@ -214,7 +216,6 @@ const loginAction = StyleSheet.create({
     marginBottom: 20,
     alignSelf: 'center',
   },
-
   loginText: {
     color: THEME.WHITE,
     fontSize: 14,

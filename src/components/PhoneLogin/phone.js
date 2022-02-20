@@ -278,16 +278,52 @@ class Phone extends React.Component {
   };
 
   render() {
-    return !this.state.otpsent ? (
-      <PhoneJSX
-        _onPress={this.loginWithOtpFixed}
-        codeChange={this.codeChange}
-        onPhoneChange={this.onPhoneChange}
-        phoneValue={this.state.phoneNumber}
-        defaultCode={this.state.code}
-        loading={this.state.loading}
-      />
-    ) : (
+    return (!this.state.otpsent ? 
+      <DermaBackground style={{padding: 20}}>
+        <Loader isVisible={this.state.loading} />
+        <View
+          style={style.phoneLogin}
+          onStartShouldSetResponder={() => Keyboard.dismiss()}
+          behavior="padding">
+          
+          <GradientText text={'MOBILE NUMBER'} />
+
+          <View style={style.getPhoneNumber}>
+            <View style={style.inputs} onStartShouldSetResponder={() => true}>
+              <CountryDrop
+                style={{width: '30%', height: 40}}
+                data={countryCodes}
+                defaultValue={this.state.code}
+                pushChange={this.codeChange}
+              />
+              <TextInput
+                style={{...style.input, ...style.number}}
+                onChangeText={this.onPhoneChange}
+                keyboardType={'numeric'}
+                value={this.state.phoneValue}
+                ref={this.props.setPhone}
+              />
+            </View>
+            <LinearGradient
+              colors={GRCOLOR}
+              style={style.button}
+              start={{x: 0, y: 0}}
+              end={{x: 1, y: 0}}>
+              <TouchableOpacity
+                onPress={this.loginWithOtpFixed}
+                style={{
+                  flex: 1,
+                  justifyContent: 'center',
+                  width: '100%',
+                  alignItems: 'center',
+                }}>
+                <Text style={{color: THEME.WHITE}}>CONTINUE</Text>
+              </TouchableOpacity>
+            </LinearGradient>
+          </View>
+        </View>
+      </DermaBackground>
+     : 
       <DermaBackground style={{padding: 20}}>
         <View
           style={style.phoneLogin}
@@ -332,56 +368,65 @@ class Phone extends React.Component {
         {this.state.loading ? <Loader isVisible={this.state.loading} /> : null}
       </DermaBackground>
     );
+
+    // return  <PhoneJSX
+    // _onPress={this.loginWithOtpFixed}
+    // codeChange={this.codeChange}
+    // onPhoneChange={this.onPhoneChange}
+    // phoneValue={this.state.phoneNumber}
+    // defaultCode={this.state.code}
+    // loading={this.state.loading}
+    // />
   }
 }
 
-const PhoneJSX = (props) => (
-  <DermaBackground style={{padding: 20}}>
-    <Loader isVisible={props.loading} />
-    <View
-      style={style.phoneLogin}
-      onStartShouldSetResponder={() => Keyboard.dismiss()}
-      behavior="padding">
-      <View>
-        <GradientText text={'MOBILE NUMBER'} />
-      </View>
+// const PhoneJSX = (props) => (
+//   <DermaBackground style={{padding: 20}}>
+//     <Loader isVisible={props.loading} />
+//     <View
+//       style={style.phoneLogin}
+//       onStartShouldSetResponder={() => Keyboard.dismiss()}
+//       behavior="padding">
+//       <View>
+//         <GradientText text={'MOBILE NUMBER'} />
+//       </View>
 
-      <View style={style.getPhoneNumber}>
-        <View style={style.inputs} onStartShouldSetResponder={() => true}>
-          <CountryDrop
-            style={{width: '30%', height: 40}}
-            data={countryCodes}
-            defaultValue={props.defaultCode}
-            pushChange={props.codeChange}
-          />
-          <TextInput
-            style={{...style.input, ...style.number}}
-            onChangeText={props.onPhoneChange}
-            keyboardType={'numeric'}
-            value={props.phoneValue}
-            ref={props.setPhone}
-          />
-        </View>
-        <LinearGradient
-          colors={GRCOLOR}
-          style={style.button}
-          start={{x: 0, y: 0}}
-          end={{x: 1, y: 0}}>
-          <TouchableOpacity
-            onPress={props._onPress}
-            style={{
-              flex: 1,
-              justifyContent: 'center',
-              width: '100%',
-              alignItems: 'center',
-            }}>
-            <Text style={{color: THEME.WHITE}}>CONTINUE</Text>
-          </TouchableOpacity>
-        </LinearGradient>
-      </View>
-    </View>
-  </DermaBackground>
-);
+//       <View style={style.getPhoneNumber}>
+//         <View style={style.inputs} onStartShouldSetResponder={() => true}>
+//           <CountryDrop
+//             style={{width: '30%', height: 40}}
+//             data={countryCodes}
+//             defaultValue={props.defaultCode}
+//             pushChange={props.codeChange}
+//           />
+//           <TextInput
+//             style={{...style.input, ...style.number}}
+//             onChangeText={props.onPhoneChange}
+//             keyboardType={'numeric'}
+//             value={props.phoneValue}
+//             ref={props.setPhone}
+//           />
+//         </View>
+//         <LinearGradient
+//           colors={GRCOLOR}
+//           style={style.button}
+//           start={{x: 0, y: 0}}
+//           end={{x: 1, y: 0}}>
+//           <TouchableOpacity
+//             onPress={props._onPress}
+//             style={{
+//               flex: 1,
+//               justifyContent: 'center',
+//               width: '100%',
+//               alignItems: 'center',
+//             }}>
+//             <Text style={{color: THEME.WHITE}}>CONTINUE</Text>
+//           </TouchableOpacity>
+//         </LinearGradient>
+//       </View>
+//     </View>
+//   </DermaBackground>
+// );
 
 const style = StyleSheet.create({
   phoneLogin: {

@@ -120,7 +120,7 @@
 57        android:screenOrientation="portrait"
 57-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:15:7-43
 58        android:supportsRtl="true"
-58-->[com.facebook.android:facebook-android-sdk:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5eb75583b37334492cd1e886e6fc2a01/jetified-facebook-android-sdk-12.2.0/AndroidManifest.xml:28:18-44
+58-->[com.facebook.android:facebook-android-sdk:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/5eb75583b37334492cd1e886e6fc2a01/jetified-facebook-android-sdk-12.2.0/AndroidManifest.xml:28:18-44
 59        android:theme="@style/AppTheme"
 59-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:14:7-38
 60        android:usesCleartextTraffic="true" >
@@ -141,7 +141,7 @@
 68            android:label="@string/app_name"
 68-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:23:9-41
 69            android:theme="@style/com_facebook_activity_theme" />
-69-->[com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:33:13-63
+69-->[com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:33:13-63
 70        <activity
 70-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:24:5-33:16
 71            android:name="com.facebook.CustomTabActivity"
@@ -166,7 +166,7 @@
 79-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:31:19-68
 80            </intent-filter>
 81            <intent-filter>
-81-->[com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:39:13-48:29
+81-->[com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:39:13-48:29
 82                <action android:name="android.intent.action.VIEW" />
 82-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:28:13-65
 82-->/Users/anshuman/Documents/DC/DermaCupid/android/app/src/main/AndroidManifest.xml:28:21-62
@@ -310,8 +310,8 @@
 157        </provider>
 158
 159        <activity android:name="com.facebook.CustomTabMainActivity" />
-159-->[com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:34:9-71
-159-->[com.facebook.android:facebook-common:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/b778e58f526be5666d02a80cb6a9ecad/jetified-facebook-common-12.2.0/AndroidManifest.xml:34:19-68
+159-->[com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:34:9-71
+159-->[com.facebook.android:facebook-common:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/8503128b0ff3b2b3e123ec1aac5696b2/jetified-facebook-common-12.3.0/AndroidManifest.xml:34:19-68
 160
 161        <receiver
 161-->[com.google.firebase:firebase-messaging:21.1.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/41d24bae51cb672cd4d7dca688b81897/jetified-firebase-messaging-21.1.0/AndroidManifest.xml:28:9-35:20
@@ -479,38 +479,38 @@
 256         a completely different provider.
 257        -->
 258        <provider
-258-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:39:9-42:40
+258-->[com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:39:9-42:40
 259            android:name="com.facebook.internal.FacebookInitProvider"
-259-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:40:13-70
+259-->[com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:40:13-70
 260            android:authorities="com.derma.app.FacebookInitProvider"
-260-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:41:13-72
+260-->[com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:41:13-72
 261            android:exported="false" />
-261-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:42:13-37
+261-->[com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:42:13-37
 262
 263        <receiver
-263-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:44:9-50:20
+263-->[com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:44:9-50:20
 264            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-264-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:45:13-86
+264-->[com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:45:13-86
 265            android:exported="false" >
-265-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:46:13-37
+265-->[com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:46:13-37
 266            <intent-filter>
-266-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:47:13-49:29
+266-->[com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:47:13-49:29
 267                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-267-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:48:17-95
-267-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:48:25-92
+267-->[com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:48:17-95
+267-->[com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:48:25-92
 268            </intent-filter>
 269        </receiver>
 270        <receiver
-270-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:51:9-57:20
+270-->[com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:51:9-57:20
 271            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
-271-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:52:13-118
+271-->[com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:52:13-118
 272            android:exported="false" >
-272-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:53:13-37
+272-->[com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:53:13-37
 273            <intent-filter>
-273-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:54:13-56:29
+273-->[com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:54:13-56:29
 274                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
-274-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:55:17-103
-274-->[com.facebook.android:facebook-core:12.2.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/ea120bd406ed66cbd8d50dd69b3ba54b/jetified-facebook-core-12.2.0/AndroidManifest.xml:55:25-100
+274-->[com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:55:17-103
+274-->[com.facebook.android:facebook-core:12.3.0] /Users/anshuman/.gradle/caches/transforms-2/files-2.1/250bea3fc06293f14c83d3cfb10fcc73/jetified-facebook-core-12.3.0/AndroidManifest.xml:55:25-100
 275            </intent-filter>
 276        </receiver>
 277

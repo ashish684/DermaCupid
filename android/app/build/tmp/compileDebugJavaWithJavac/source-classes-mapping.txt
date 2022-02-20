@@ -5,10 +5,10 @@ com/derma_dev/MainActivity.java
 com/derma_dev/MainApplication.java
  com.derma.app.MainApplication
  com.derma.app.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
 com/derma_dev/ReactNativeFlipper.java
  com.derma.app.ReactNativeFlipper
  com.derma.app.ReactNativeFlipper$1
  com.derma.app.ReactNativeFlipper$2
  com.derma.app.ReactNativeFlipper$2$1
-com/facebook/react/PackageList.java
- com.facebook.react.PackageList

@@ -6,7 +6,7 @@ import THEME from '../../config/theme';
 
 const GradientText = ({ text }) =>
     <LinearTextGradient
-        style={{ fontWeight: '700', fontSize: 27, letterSpacing: 1, textDecorationLine: 'underline' }}
+        style={{ fontWeight: '700', fontSize: 20, letterSpacing: 1, alignSelf:'center' }}
         locations={[0, 1]}
         colors={THEME.GRADIENT_BG.PAIR}
         start={{ x: 0, y: 0 }}
